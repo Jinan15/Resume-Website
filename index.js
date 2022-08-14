@@ -5,16 +5,10 @@ const softSkillsButton = document.getElementById("soft-skills");
 const hardSkillsBox = document.getElementById("hard-skills-box");
 const softSkillsBox = document.getElementById("soft-skills-box");
 
+// If hard button is selected then var is true, else false
 let currentStateHard = true;
 
-var nodes = document.getElementById("soft-skills-box").getElementsByTagName('*');
-for (var i = 0; i < nodes.length; i++) {
-    nodes[i].disabled = true;
-}
-
-// hardSkillsButton.addEventListener("click", HardToSoftSkills);
-// softSkillsButton.addEventListener("click", SoftToHardSkills);
-
+// Transitions to hard skills panel
 function HardSkills() {
     if (currentStateHard == false) {
         softSkillsButton.classList.remove("active");
@@ -28,6 +22,7 @@ function HardSkills() {
     }
 }
 
+// Transitions to soft skills panel
 function SoftSkills() {
     if (currentStateHard) {
         hardSkillsButton.classList.remove("active");
@@ -36,8 +31,6 @@ function SoftSkills() {
         softSkillsBox.classList.remove("panel-off");
         hardSkillsBox.classList.add("panel-off");
         softSkillsBox.classList.add("panel-on");
-
-        
 
         currentStateHard = false;
     }
