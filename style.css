@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #246756;
+    background: #209578;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,11 +29,10 @@ body {
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
-.container .left_Side
+.container .left_side
 {
     position: relative;
     background-image: linear-gradient(45deg, #003147, #195f80);
-    /* background: #003147; */
     padding: 25px;
 }
 
@@ -172,7 +171,7 @@ body {
     left: 0;
     height: 100%;
     background: #03a9f4;
-    animation: fillBars 3s 1;
+    animation: fillBars 2s 1;
     border-radius: 3px;
 }
 
@@ -259,6 +258,7 @@ p
 .nav-tabs .nav-link.active {
     color: #2a7da2;
     border-color: #dee2e6 #dee2e6 #fff;
+    text-decoration: none;
 }
 
 .nav-tabs .nav-link.active:hover {
@@ -274,7 +274,6 @@ p
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    text-decoration: none;
     font-weight: 600;
 }
 
@@ -291,8 +290,8 @@ p
 /* Skills list */
 
 .panel-on {
-    display: block;
-    min-height: 300px;
+    display: relative;
+    min-height: 372px;
     padding: 10px;
     border: 1px solid transparent;
     border-color: #fff #dee2e6 #dee2e6;
@@ -339,7 +338,7 @@ p
     left: 0;
     height: 100%;
     background: #03a9f4;
-    animation: fillBars 3s 1;
+    animation: fillBars 2s 1;
     border-radius: 5px;
 }
 
@@ -401,6 +400,10 @@ p
 }
 
 div.contactInfo ul li span.text a:visited {
+    color: #fff;
+}
+
+div.contactInfo ul li span.text a:active {
     color: #fff;
 }
 

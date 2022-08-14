@@ -1,37 +1,37 @@
 // Select DOM Items
-const hardSkillsButton = document.getElementById("hard-skills");
+const TechnicalSkillsButton = document.getElementById("Technical-skills");
 const softSkillsButton = document.getElementById("soft-skills");
 
-const hardSkillsBox = document.getElementById("hard-skills-box");
+const TechnicalSkillsBox = document.getElementById("Technical-skills-box");
 const softSkillsBox = document.getElementById("soft-skills-box");
 
-// If hard button is selected then var is true, else false
-let currentStateHard = true;
+// If Technical button is selected then var is true, else false
+let currentStateTechnical = true;
 
-// Transitions to hard skills panel
-function HardSkills() {
-    if (currentStateHard == false) {
+// Transitions to Technical skills panel
+function TechnicalSkills() {
+    if (currentStateTechnical == false) {
         softSkillsButton.classList.remove("active");
-        hardSkillsButton.classList.add("active");
+        TechnicalSkillsButton.classList.add("active");
         softSkillsBox.classList.remove("panel-on");
-        hardSkillsBox.classList.remove("panel-off");
+        TechnicalSkillsBox.classList.remove("panel-off");
         softSkillsBox.classList.add("panel-off");
-        hardSkillsBox.classList.add("panel-on");
+        TechnicalSkillsBox.classList.add("panel-on");
 
-        currentStateHard = true;
+        currentStateTechnical = true;
     }
 }
 
 // Transitions to soft skills panel
 function SoftSkills() {
-    if (currentStateHard) {
-        hardSkillsButton.classList.remove("active");
+    if (currentStateTechnical) {
+        TechnicalSkillsButton.classList.remove("active");
         softSkillsButton.classList.add("active");
-        hardSkillsBox.classList.remove("panel-on");
+        TechnicalSkillsBox.classList.remove("panel-on");
         softSkillsBox.classList.remove("panel-off");
-        hardSkillsBox.classList.add("panel-off");
+        TechnicalSkillsBox.classList.add("panel-off");
         softSkillsBox.classList.add("panel-on");
 
-        currentStateHard = false;
+        currentStateTechnical = false;
     }
 }
