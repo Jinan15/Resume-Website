@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,8 +15,7 @@ body {
     min-height: 100vh;
 }
 
-.container
-{
+.container {
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -29,15 +27,17 @@ body {
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
-.container .left_side
-{
+/* Left side panel code */
+
+.container .left_side {
     position: relative;
     background-image: linear-gradient(45deg, #003147, #195f80);
     padding: 25px;
 }
 
-.profileText
-{
+/* Profile Picture */
+
+.profile {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -46,8 +46,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.profileText .imgBx
-{
+.profile .imgBx {
     position: relative;
     width: 200px;
     height: 200px;
@@ -55,8 +54,7 @@ body {
     overflow: hidden;
 }
 
-.profileText .imgBx img
-{
+.profile .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,8 +63,9 @@ body {
     object-fit: cover;
 }
 
-.profileText h2
-{
+/* Profile text */
+
+.profile h2 {
     color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
@@ -76,19 +75,20 @@ body {
     line-height: 1.4em;
 }
 
-.profileText h2 span
-{
+.profile h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
 
-.contactInfo
-{
+/* Contact Info */
+
+.contactInfo {
     padding-top: 20px;
 }
 
-.title
-{
+/* left panel titles */
+
+.left_title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
@@ -96,13 +96,11 @@ body {
     margin-bottom: 20px;
 }
 
-.contactInfo ul
-{
+.contactInfo ul {
     position: relative;
 }
 
-.contactInfo ul li
-{
+.contactInfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
@@ -110,51 +108,47 @@ body {
     min-width: 250px;
 }
 
-.contactInfo ul li .icon
-{
+.contactInfo ul li .icon {
     display: inline-block;
     width: 25px;
     font-size: 18px;
     color: #03a9f4;
 }
 
-.contactInfo ul li span
-{
+.contactInfo ul li span {
     color: #fff;
     font-weight: 300;
 }
 
-.contactInfo.education li
-{
+/* Education */
+
+.contactInfo.education li {
     margin-bottom: 15px;
 }
 
-.contactInfo.education h5
-{
+.contactInfo.education h5 {
     color: #03a9f4;
     font-weight: 500;
 }
 
-.contactInfo.education h4:nth-child(2)
-{
+.contactInfo.education h4:nth-child(2) {
     color: #fff;
     font-weight: 500;
 }
 
-.contactInfo.education h4
-{
+.contactInfo.education h4 {
     color: #fff;
     font-weight: 300;
 }
 
-.contactInfo.education ul li
-{
+.contactInfo.education ul li {
     color: #fff;
     font-weight: 300;
 }
 
-.contactInfo.language .percent
-{
+/* Languages */
+
+.contactInfo.language .percent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -164,8 +158,7 @@ body {
     border-radius: 3px;
 }
 
-.contactInfo.language .percent div
-{
+.contactInfo.language .percent div {
     position: absolute;
     top: 0;
     left: 0;
@@ -175,61 +168,60 @@ body {
     border-radius: 3px;
 }
 
-.container .right_Side {
+/* Right side panel code */
+
+.container .right_side {
     position: relative;
     background: #fff;
     padding: 30px;
 }
 
-.about
-{
+/* Profile section */
+
+.about {
     margin-bottom: 10px;
 }
 
-.about:last-child
-{
+.about:last-child {
     margin-bottom: 0;
 }
 
-.title2
-{
+/* Right side titles */
+
+.right_title {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
-p
-{
+p {
     color: #333;
 }
 
-.about .box
-{
+/* Experience Section */
+
+.about .box {
     display: flex;
     flex-direction: row;
     margin: 10px 0;
 }
 
-.about .box .year_company
-{
+.about .box .year_company {
     min-width: 175px;
 }
 
-.about .box .year_company h5
-{
+.about .box .year_company h5 {
     text-transform: uppercase;
     color: #848c90;
     font-weight: 600;
 }
 
-.about .box .text
-{
+.about .box .text {
     min-width: 480px;
 }
 
-.about .box .text h4
-{
+.about .box .text h4 {
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
@@ -287,7 +279,7 @@ p
     padding: 7px;
 }
 
-/* Skills list */
+/* Skills list panel */
 
 .panel-on {
     display: relative;
@@ -303,10 +295,9 @@ p
     display: none;
 }
 
-/* End */
+/* Skills text and bar */
 
-.skills .box
-{
+.skills .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -315,15 +306,13 @@ p
     align-items: center;
 }
 
-.skills .box h4
-{
+.skills .box h4 {
     text-transform: uppercase;
     color: #848c99;
     font-weight: 500;
 }
 
-.skills .box .percent
-{
+.skills .box .percent {
     position: relative;
     width: 100%;
     height: 10px;
@@ -331,8 +320,7 @@ p
     border-radius: 5px;
 }
 
-.skills .box .percent div
-{
+.skills .box .percent div {
     position: absolute;
     top: 0;
     left: 0;
@@ -342,56 +330,52 @@ p
     border-radius: 5px;
 }
 
-@keyframes fillBars
-{
-    from
-    {
+/* Filling Percent bar Animation */
+@keyframes fillBars {
+    from {
         width: 0;
-    }
-    to
-    {
+    } to {
         width: 100%;
     }
 }
 
-@media(max-width: 1000px)
-{
-    .container
-    {
+/* Diff Screen Sizes */
+@media(max-width: 1000px) {
+    .container {
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
     }
 
-    .about .box .text
-    {
+    .about .box .text {
         min-width: 0;
     }
 }
 
-@media(max-width: 600px)
-{
-    .about .box
-    {
+@media(max-width: 600px) {
+    .about .box {
         flex-direction: column;
     }
 
-    .about .box .year_company
-    {
+    .about .box .year_company {
         margin-bottom: 5px;
     }
 
-    .about .box .text
-    {
+    .about .box .text {
         min-width: 0;
     }
 
-    .skills .box
-    {
+    .skills .box {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
+/* Right Panel - Experience links */
+
 .about .box .text a:visited {
+    color: #2a7da2;
+}
+
+.about .box .text a:active {
     color: #2a7da2;
 }
 
@@ -399,18 +383,24 @@ p
     color: #03a9f4;
 }
 
-div.contactInfo ul li span.text a:visited {
+/* Left Panel - Contact Info links */
+
+.contactInfo ul li .text a {
+    text-decoration: none;
+}
+
+.contactInfo ul li .text a:visited {
     color: #fff;
 }
 
-div.contactInfo ul li span.text a:active {
+.contactInfo ul li .text a:active {
     color: #fff;
 }
 
-div.contactInfo ul li span.text a:active,a[href^=tel],a[href^=mailto] {
+.contactInfo ul li .text a:active,a[href^=tel],a[href^=mailto] {
     color: #fff;
 }
 
-div.contactInfo ul li span.text a:hover {
+.contactInfo ul li .text a:hover {
     color: #03a9f4;
 }
