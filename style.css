@@ -229,11 +229,11 @@ p {
 
 /* skills nav bar */
 
-.skills .skills-tabs {
+.about .skills-tabs {
     flex-grow: 1;
 }
 
-.skills .nav {
+.about .nav {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -241,7 +241,7 @@ p {
     list-style: none;
 }
 
-.skills .nav-tabs {
+.about .nav-tabs {
     border-bottom: 1px solid #dee2e6;
 }
 
@@ -273,7 +273,7 @@ p {
     margin-bottom: -1px;
 }
 
-.skills .skills-tab {
+.about .skills-tab {
     flex-grow: 1;
     text-align: center;
     padding: 7px;
@@ -283,7 +283,6 @@ p {
 
 .panel-on {
     display: relative;
-    min-height: 372px;
     padding: 10px;
     border: 1px solid transparent;
     border-color: #fff #dee2e6 #dee2e6;
@@ -346,12 +345,20 @@ p {
         grid-template-columns: repeat(1,1fr);
     }
 
+    .right_side {
+        min-height: 1280px;
+    }
+
     .about .box .text {
         min-width: 0;
     }
 }
 
 @media(max-width: 600px) {
+    .right_side {
+        min-height: 1800px;
+    }
+
     .about .box {
         flex-direction: column;
     }

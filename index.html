@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container">
+        <div id="container" class="container">
 
             <div class="left_side">
 
@@ -38,7 +38,8 @@
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </span>
                             <span class="text">
-                                <a style="text-decoration: none;" href="mailto:jinan@jpatel.me?subject=fill in later">jinan@jpatel.me</a>
+                                <a style="text-decoration: none;"
+                                    href="mailto:jinanpatel@knights.ucf.edu?subject=fill in later">jinanpatel@knights.ucf.edu</a>
                             </span>
                         </li>
                         <li>
@@ -125,7 +126,22 @@
                 </div>
 
                 <div class="about">
-                    <h2 class="right_title">Experience</h2>
+                    <nav class="skills-tabs nav nav-tabs" role="tablist">
+                        <a id="experience" href="javascript:void(0);"
+                            class="skills-tab nav-item nav-link active" onclick="TechnicalSkills();">
+                            <h2 class="right_title">Experience</h2>
+                        </a>
+
+                        <a id="projects" href="javascript:void(0);"
+                            class="skills-tab nav-item nav-link" onclick="SoftSkills();">
+                            <h2 class="right_title">Projects</h2>
+                        </a>
+                    </nav>
+                    <!-- <div class="experience_Projects">
+                        <h2 class="right_title">Experience</h2>
+                        <h2 class="right_title">Projects</h2>
+                    </div> -->
+
                     <div class="box">
                         <div class="year_company">
                             <h5>Feb 2022 - Apr 2022</h5>
